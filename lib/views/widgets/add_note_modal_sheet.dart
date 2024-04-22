@@ -36,14 +36,14 @@ class _AddNoteFormState extends State<AddNoteForm> {
       autovalidateMode: autovalidateMode,
       child: Column(
         children: [
-          const SizedBox(height: 50),
+          const SizedBox(height: 30),
           CustomTextField(
             hint: 'Title',
             onSaved: (value) {
               title = value;
             },
           ),
-          const SizedBox(height: 30),
+          const SizedBox(height: 40),
           CustomTextField(
             onSaved: (value) {
               content = value;
@@ -51,7 +51,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
             hint: 'Content',
             maxLines: 4,
           ),
-          const SizedBox(height: 60),
+          const SizedBox(height: 40),
           CustomButton(
             onTap: () {
               if (formKey.currentState!.validate()) {
